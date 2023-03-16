@@ -4,6 +4,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CleanUpDesktop {
+	
+	
+	/* 2023-03-16
+	 * 프로그래머스
+	 * java 바탕화면정리
+	 * Level 1
+	 * lessons ( 161990 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(new String[] {"..", "#."}));
 	}
