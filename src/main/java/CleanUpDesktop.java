@@ -8,7 +8,7 @@ public class CleanUpDesktop {
 	
 	/* 2023-03-16
 	 * 프로그래머스
-	 * java 바탕화면정리
+	 * java 바탕화면 정리
 	 * Level 1
 	 * lessons ( 161990 )
 	 * 
