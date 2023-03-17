@@ -3,6 +3,14 @@ package main.java;
 import java.util.*;
 
 public class TicTacToe {
+	
+	/* 2023-03-17
+	 * 프로그래머스
+	 * java 혼자서 하는 틱택토
+	 * Level 2
+	 * lessons ( 160585 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(new String[] {"OOO", "XX.", "O.X"}));
 	}
