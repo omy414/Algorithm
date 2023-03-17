@@ -8,7 +8,7 @@ public class PersonalityTest {
 	/* 2023-03-16
 	 * 프로그래머스
 	 * java 성격 유형 검사하기
-	 * Level 1
+	 * Level 1 
 	 * lessons ( 118666 )
 	 * 
 	 */
