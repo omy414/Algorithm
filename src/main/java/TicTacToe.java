@@ -137,7 +137,7 @@ public class TicTacToe {
 					result = 0;
 					break;
 				}else {
-					//각 케이스에 해당하는 라인을 풀로 정상적으로 for문을 완료해야만 1반환
+					//각 케이스에 해당하는 라인을 정상적으로 for문을 풀로 완료해야만 1반환 ( 중간에 끊어지면 실패 )
 					result = 1;
 				}
 			}
