@@ -70,7 +70,7 @@ public class CleanUpDesktop {
         	}
 		}
         
-        System.out.println("펄스트 : " + lux);
+        System.out.println("펄스트 : " + lux); 
         System.out.println("펄스트 : " + luy);
         
         System.out.println("라스트 : " + (rdx+1));
