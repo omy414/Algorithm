@@ -4,6 +4,14 @@ import java.util.*;
 
 public class PersonalInfoExpirDate {
 	
+	
+	/* 2023-03-28
+	 * 프로그래머스
+	 * java 개인정보 수집 유효기간
+	 * Level 1
+	 * lessons ( 150370 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution("2022.05.19", new String[] {"A 6", "B 12", "C 3"}, new String[] {"2021.05.02 A", "2021.07.01 B", "2022.02.19 C", "2022.02.20 C"}));
 	}
