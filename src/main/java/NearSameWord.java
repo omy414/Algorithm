@@ -13,6 +13,7 @@ public class NearSameWord {
 	 */
 	public static void main(String[] args) {
 		System.out.println(solution("banana"));
+		System.out.println(solution("apple"));
 	}
 	
 	//문자열 s가 주어졌을 때, s의 각 위치마다 자신보다 앞에 나왔으면서, 자신과 가장 가까운 곳에 있는 같은 글자가 어디 있는지
