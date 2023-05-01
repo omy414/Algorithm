@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 
 public class ReceiveReportResult {
+	//2023-05-01
 	//아직 해결못함 풀어야함
 	public static void main(String[] args) {
 		System.out.println(solution(new String[] {"con", "ryan", "may", "drago"}, new String[] {"drago may","ryan may","con may","ryan con", "ryan con", "ryan con", "ryan con"}, 3));
