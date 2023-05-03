@@ -6,7 +6,14 @@ import java.util.stream.Collectors;
 
 
 public class ReceiveReportResult {
-	//2023-05-01
+	
+	/* 2023-05-01
+	 * 프로그래머스
+	 * java 신고 결과 받기 ( 카카오문제 )
+	 * Level 1 
+	 * lessons ( 92334 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(new String[] {"muzi", "frodo", "apeach", "neo"}, new String[] {"muzi frodo", "apeach frodo", "apeach neo", "muzi neo"}, 1));
 	}
