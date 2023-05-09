@@ -5,6 +5,13 @@ import java.util.stream.Collectors;
 
 public class ClawGame{
 	
+	/* 2023-05-09
+	 * 프로그래머스
+	 * java 크레인 인형뽑기 게임 ( 카카오 개발자 겨울 인턴십 ) 
+	 * Level 1
+	 * lessons ( 64061 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(new int[][] {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 4, 4, 0}, {1, 2, 2, 1}}, new int[] {2, 3, 1, 4, 2, 3}));
 	}
