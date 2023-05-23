@@ -4,6 +4,13 @@ package main.java;
 import java.util.*;
 
 public class Rectangle {
+	/* 2023-05-23
+	 * 프로그래머스
+	 * java 최소직사각형
+	 * Level 1 
+	 * lessons ( 86491 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(new int[][] {{60,50},{30,70},{60,30},{80,40}}));
 	}
