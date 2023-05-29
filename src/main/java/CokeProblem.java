@@ -3,6 +3,13 @@ package main.java;
 import java.util.*;
 
 public class CokeProblem {
+	/* 2023-05-29
+	 * 프로그래머스
+	 * java 콜라문제
+	 * Level 1
+	 * lessons ( 155652 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution(2, 1, 20));
 	}
