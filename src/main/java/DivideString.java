@@ -4,6 +4,13 @@ import java.util.*;
 
 public class DivideString {
 	
+	/* 2023-06-05
+	 * 프로그래머스
+	 * java 문자열나누기
+	 * Level 1
+	 * lessons ( 86051 )
+	 * 
+	 */
 	public static void main(String[] args) {
 		System.out.println(solution("bananaaaaaaaaaaab"));
 	}
