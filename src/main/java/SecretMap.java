@@ -14,24 +14,24 @@ public class SecretMap {
         String[] arr2String = new String[arr2.length];
         
         for (int i = 0; i < arr1.length; i++) {
-			int temp = arr1[i];
+        	Long temp = (long)arr1[i];
 			String sb1 = conversion(temp, 2, n);
 			System.out.println("변환1 : " + sb1);
 			
 			arr1String[i] = sb1;
 			
-			temp = arr2[i];
+			temp = (long)arr2[i];
 			String sb2 = conversion(temp, 2, n);
 			arr2String[i] = sb2;
 			System.out.println("변환2 : " + sb2);
 			
-			int addNumber = Integer.parseInt(sb1) + Integer.parseInt(sb2);
+			Long addNumber = (long)(Integer.parseInt(sb1) + Integer.parseInt(sb2));
 			
 			String convertNumber = String.valueOf(addNumber);
 			System.out.println(convertNumber);
 			
 			if(convertNumber.length() != n) {
-				int ll = n - convertNumber.length();
+				Long ll = (long)(n - convertNumber.length());
 	        	
 	        	for (int k = 0; k < ll; k++) {
 	        		convertNumber = "0"+convertNumber;
@@ -42,7 +42,7 @@ public class SecretMap {
 			
 			String returnString = "";
 			for (int j = 0; j < convertNumber.length(); j++) {
-				int charTemp = Integer.parseInt(String.valueOf(convertNumber.charAt(j)));
+				Long charTemp = (long)Integer.parseInt(String.valueOf(convertNumber.charAt(j)));
 				
 				if(charTemp > 0) {
 					returnString+="#";
@@ -58,9 +58,9 @@ public class SecretMap {
         return answer;
     }
 	
-	public static String conversion(int number, int N, int length){
+	public static String conversion(Long number, int N, int length){
         StringBuilder sb = new StringBuilder();
-	    int current = number;
+        Long current = number;
 	    
         // 진법 변환할 숫자가 0보다 큰 경우 지속 진행
         while(current > 0){
@@ -83,7 +83,7 @@ public class SecretMap {
 //        System.out.println("숫자 : " + number + "를 " + N + "진법으로 변환한 수 : " + sb.reverse().toString());
         String temp = sb.reverse().toString();
         if(sb.length() != length) {
-        	int ll = length - sb.length();
+        	Long ll = (long)(length - sb.length());
         	
         	for (int i = 0; i < ll; i++) {
 				temp = "0"+temp;
