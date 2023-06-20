@@ -4,10 +4,10 @@ import java.util.*;
 
 public class SecretMap {
 	public static void main(String[] args) {
-		System.out.println(solution(6, new int[] {46, 33, 33 ,22, 31, 50}, new int[] {27 ,56, 19, 14, 14, 10}));
+		System.out.println(solution(5, new int[] {0, 0, 0, 0, 0}, new int[] {30, 1, 21, 17, 28}));
 	}
 	
-	public static String[] solution(int n, int[] arr1, int[] arr2) {
+	public static String[] solution2(int n, int[] arr1, int[] arr2) {
         String[] answer = new String[arr1.length];
         
         String[] arr1String = new String[arr1.length];
@@ -40,19 +40,7 @@ public class SecretMap {
 			
 			System.out.println("후 : " + convertNumber);
 			
-			String returnString = "";
-			for (int j = 0; j < convertNumber.length(); j++) {
-				Long charTemp = (long)Integer.parseInt(String.valueOf(convertNumber.charAt(j)));
-				
-				if(charTemp > 0) {
-					returnString+="#";
-				}else {
-					returnString+=" ";
-				}
-			}
-			System.out.println("배열형태 : " + returnString);
-			
-			answer[i] = returnString;
+			answer[i] = convertNumber.replaceAll("2", "#").replaceAll("1", "#").replaceAll("0", " ");
 		}
         
         return answer;
@@ -91,5 +79,20 @@ public class SecretMap {
         	
         }
         return temp;
+    }
+	
+	public static String[] solution(int n, int[] arr1, int[] arr2) {
+        String[] answer = new String[n];       
+        for(int i = 0; i < n; i++) {
+            String biString = Integer.toBinaryString(arr1[i] | arr2[i]);
+            
+            String appendZero = biString;
+            for (int j = 0; j < (n - biString.length()); j++) {
+            	appendZero = "0" + appendZero;
+			}
+            System.out.println(appendZero);
+            answer[i] = appendZero.replaceAll("1", "#").replaceAll("0", " ");
+        }
+        return answer;
     }
 }
